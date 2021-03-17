@@ -106,10 +106,12 @@
 /// be used. Each [Tween] specifies a start and an end value. As the animation
 /// value of the [Animation] powering the [Tween] progresses from 0.0 to 1.0 it
 /// produces interpolated values between its start and end value. The values
+/// produced by the [Tween] usually move closer and closer to its end value as
 /// the animation value of the powering [Animation] approaches 1.0.
 ///
 /// The following video shows example values produced by an [IntTween], a
 /// `Tween<double>`, and a [ColorTween] as the animation value runs from 0.0 to
+/// 1.0 and back to 0.0:
 ///
 /// {@animation 530 150 https://flutter.github.io/assets-for-api-docs/assets/animation/tweens.mp4}
 ///
@@ -165,3 +167,4 @@ export 'src/animation/curves.dart';
 export 'src/animation/listener_helpers.dart';
 export 'src/animation/tween.dart';
 export 'src/animation/tween_sequence.dart';
+
