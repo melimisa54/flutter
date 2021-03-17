@@ -14,6 +14,10 @@
 /// not sufficient for a given use case, the basic building blocks provided by
 /// this library can be used to implement custom animated effects.
 ///
+/// This library depends only on core Dart libraries and the `physics.dart`
+/// library.
+///
+///
 /// ### Foundations: the Animation class
 ///
 /// Flutter represents an animation as a value that changes over a given
@@ -28,6 +32,7 @@
 /// beginning to the end or the other way around. It may also indicate that the
 /// animation is currently stopped at the beginning or the end.
 ///
+/// Other objects can register listeners on an [Animation] to be informed
 /// whenever the animation value and/or the animation status changes. A [Widget]
 /// may register such a *value* listener via [Animation.addListener] to rebuild
 /// itself with the current animation value whenever that value changes. For
@@ -101,12 +106,10 @@
 /// be used. Each [Tween] specifies a start and an end value. As the animation
 /// value of the [Animation] powering the [Tween] progresses from 0.0 to 1.0 it
 /// produces interpolated values between its start and end value. The values
-/// produced by the [Tween] usually move closer and closer to its end value as
 /// the animation value of the powering [Animation] approaches 1.0.
 ///
 /// The following video shows example values produced by an [IntTween], a
 /// `Tween<double>`, and a [ColorTween] as the animation value runs from 0.0 to
-/// 1.0 and back to 0.0:
 ///
 /// {@animation 530 150 https://flutter.github.io/assets-for-api-docs/assets/animation/tweens.mp4}
 ///
