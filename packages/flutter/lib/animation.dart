@@ -1,4 +1,8 @@
+// Copyright 2014 The Flutter Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
+/// The Flutter animation system.
 ///
 /// To use, import `package:flutter/animation.dart`.
 ///
@@ -9,10 +13,6 @@
 /// to animate certain properties of a [Widget]. If those animated widgets are
 /// not sufficient for a given use case, the basic building blocks provided by
 /// this library can be used to implement custom animated effects.
-///
-/// This library depends only on core Dart libraries and the `physics.dart`
-/// library.
-///
 ///
 /// ### Foundations: the Animation class
 ///
@@ -28,7 +28,6 @@
 /// beginning to the end or the other way around. It may also indicate that the
 /// animation is currently stopped at the beginning or the end.
 ///
-/// Other objects can register listeners on an [Animation] to be informed
 /// whenever the animation value and/or the animation status changes. A [Widget]
 /// may register such a *value* listener via [Animation.addListener] to rebuild
 /// itself with the current animation value whenever that value changes. For
